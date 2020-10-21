@@ -8,8 +8,8 @@ const Header = (props) => {
 						<img src={logo} alt="Studio Ghibli Logo" />
                         <h1>Ghibli Films</h1>
 						<div className="d-flex">
-							<button type="button" onClick={props.handleFilms} className="btn btn-primary shadow m-5">Load Films</button>
-							<button type="button" onClick={props.handlePeople} className="btn btn-primary shadow m-5">Load People</button>
+							<button type="button" onClick={props.handleFilms} className="btn btn-info shadow m-5">Load Films</button>
+							<button type="button" onClick={props.handlePeople} className="btn btn-info shadow m-5">Load People</button>
 						</div>
 					</section>
 				</main>
