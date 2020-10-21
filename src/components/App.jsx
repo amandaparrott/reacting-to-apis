@@ -19,10 +19,11 @@ class App extends React.Component {
   componentDidMount() {
     fetch("https://ghibliapi.herokuapp.com/films")
       .then((res) => res.json())
-      .then(obj => {this.setState({ films: obj })});
+      .then( => {this.setState({ films: obj })});
     fetch("https://ghibliapi.herokuapp.com/people")
       .then((res) => res.json())
-      .then(obj => {this.setState({ people: obj })});
+      .then(obj => {this.setState({ people: obj })})
+      .catch(err => console.log(err))
   }
 
   handlePeople = () => this.setState({ filmsLoaded: false, peopleLoaded: true});
